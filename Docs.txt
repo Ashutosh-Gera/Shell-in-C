@@ -8,7 +8,10 @@ For most of the commands, i've handled the errors when they : 1. Are receiving i
                                                               2. Not enough arguments
                                                               3. System call has been unsuccessful
 
-The folder can be compiled and run using the command "make"
+Using this basic layout, we can extend the functionalities of our shell however much we want, thus, this can be used as a good starting point if you want to try out making your own shell
+and even add your custom functions.
+
+The folder can be compiled and run using the command "make".
 
 Few of the test cases which can be used for testing:
 For echo: try - echo hello world ; echo "hello world" ; echo "\n hello world \n" etc
@@ -24,6 +27,4 @@ For date: try date
 
 Thank you
 Ashutosh Gera
-2021026
-CSE 
 
