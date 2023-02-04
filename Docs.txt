@@ -1,0 +1,29 @@
+I have made a basic shell named aSh!!
+
+It can handle the following commands: cd, quit, echo, pwd, ls, cat, mkdir, rm and date.
+
+I have implemented the 5 external commands using fork() and exec() family of commands.
+
+For most of the commands, i've handled the errors when they : 1. Are receiving invalid arguments
+                                                              2. Not enough arguments
+                                                              3. System call has been unsuccessful
+
+The folder can be compiled and run using the command "make"
+
+Few of the test cases which can be used for testing:
+For echo: try - echo hello world ; echo "hello world" ; echo "\n hello world \n" etc
+For cd: try - cd .. ; cd /home ; cd ../.. ; cd ; etc
+For quit: type quit
+For pwd: type pwd anywhere;
+For ls: try - ls ; chande directory and then do ls etc
+For cat: try cat main.c 
+For mkdir: try - mkdir hello; mkdir hello (again, would give error) 
+For rm: try - rm <any file name>
+For date: try date
+
+
+Thank you
+Ashutosh Gera
+2021026
+CSE 
+
