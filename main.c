@@ -211,13 +211,19 @@ int externalExe(char** args) {
     if (pid == 0) {
         //child process
         if (strcmp(args[0], "ls") == 0){
-            int statusCode = execvp("/home/ash/Desktop/sem3/os/Assignment1/ls", args);
+            char cwd[1024];
+            getcwd(cwd, sizeof(cwd));
+            int statusCode = execvp(cwd, args);
             if (statusCode == -1) {printf("Your command failed\n"); perror("aSh");}
         } else if (strcmp(args[0], "cat") == 0) {
-            int statusCode = execvp("/home/ash/Desktop/sem3/os/Assignment1/cat", args);
+            char cwd[1024];
+            getcwd(cwd, sizeof(cwd));
+            int statusCode = execvp(cwd, args);
             if (statusCode == -1) {printf("Your command failed\n"); perror("aSh");}
         } else if (strcmp(args[0], "mkdir") == 0) {
-            int statusCode = execvp("/home/ash/Desktop/sem3/os/Assignment1/mkdir", args);
+            char cwd[1024];
+            getcwd(cwd, sizeof(cwd));
+            int statusCode = execvp(cwd, args);
             if (statusCode == -1) {printf("Your command failed\n"); perror("aSh");}
         } else {
             int statusCode = execvp(args[0], args);
